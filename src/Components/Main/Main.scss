@@ -1,0 +1,105 @@
+
+
+.main{
+    background-image: url('../../assets//img//rasm1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    .main_all{
+        h1{
+            max-width: 573.17px;
+            width: 100%;
+            min-height: 228.49px;
+            width: 100%;
+            font-family: Poppins;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 96px;
+            letter-spacing: 0.5px;
+            text-align: left;
+            color: #FFFFFF;
+            padding-top: 270px;
+
+            
+        }
+    }
+
+}
+.column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+    flex-wrap: wrap;
+
+   
+    .column_all{
+        max-width: 417.94px;
+        width: 100%;
+        height: 358.31px;
+        background-color: #F6F6F6;
+        &:hover{
+            background-color: #E2E2E2;
+            border-radius: 5px;
+
+
+        }
+        .teg{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 50px;
+       
+        h1{
+            max-width: 202.18px;
+            width: 100%;
+            height: 58.08px;
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: 0.5px;
+            text-align: left;
+            color: #223263;  
+        }
+        p{
+            font-family: Raleway;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 54px;
+            letter-spacing: 0.5px;
+            text-align: left;
+            color: #40BFFF;
+            
+        }
+    }
+    h4{
+        padding: 0 30px;
+        font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.5px;
+text-align: left;
+color: #9098B1;
+margin-top: 20px;
+  span{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #FB7181;
+    
+  }
+    }
+    img{
+        margin-top: -100px;
+    }
+    }
+}
+
+

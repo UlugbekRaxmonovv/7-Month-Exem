@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.navbar_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+
+    .navbar_top_link {
+        select {
+            border: none;
+            outline: none;
+            option{
+                border: none;
+                outline: none;
+            }
+        }
+    }
+
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px 0;
+        gap: 36px;
+
+        .link {
+            display: flex;
+            align-items: center;
+
+            svg {
+                width: 24px;
+                height: 24px;
+                color: #22262A;
+            }
+
+            span {
+                padding: 0.2px 4px;
+                border-radius: 50px;
+                background-color: #FB7181;
+                color: #fff;
+                margin-top: -20px;
+                margin-left: -5px;
+            }
+
+            p, .span {
+                font-family: 'Proxima Nova';
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24.36px;
+                text-align: left;
+                color: #262626;
+            }
+
+            .span {
+                background-color: white;
+                margin-top: 1px;
+            }
+        }
+    }
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 0;
+
+    .menu {
+        display: none;
+    }
+
+    .logo img {
+        max-width: 134.32px;
+        width: 100%;
+        height: 44px;
+    }
+}
+
+.Ul_li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+
+    li a {
+        font-family: 'Poppins';
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px;
+        text-align: left;
+        color: #262626;
+        transition: all .1s linear;
+
+        &:hover {
+            color: #33A0FF;
+        }
+    }
+}
+
+@media(max-width: 990px) {
+    .navbar_top{
+        padding: 0 10px;
+    }
+    nav {
+        padding: 0 10px;
+        .menu {
+            display: block;
+        }
+
+        .Ul_li {
+            position: absolute;
+            top:80px;
+            left: 0;
+            width: 100%;
+            padding: 20px 0;
+            background:white;
+            box-shadow: 0 3px 5px #0002;
+            flex-direction: column;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+            transition: .3s ease;
+            z-index: 10;
+            transform-origin: top;
+            transform: scaleY(0);
+            line-height: 32px;
+
+            &.show {
+                transform: scaleY(1);
+            }
+        }
+    }
+}
+@media(max-width: 500px){
+    .navbar_top{
+        padding: 0 10px;
+    }
+    nav {
+        padding: 0 10px;
+        .menu {
+            display: block;
+        }
+
+        .Ul_li {
+            position: absolute;
+            top:50px;
+            left: 0;
+            width: 100%;
+            padding: 20px 0;
+            background:white;
+            box-shadow: 0 3px 5px #0002;
+            flex-direction: column;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+            transition: .3s ease;
+            z-index: 10;
+            transform-origin: top;
+            transform: scaleY(0);
+            line-height: 32px;
+
+            &.show {
+                transform: scaleY(1);
+            }
+        }
+    }
+
+.navbar_top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .nav{
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid black;
+        width: 100%;
+    }
+}
+}
