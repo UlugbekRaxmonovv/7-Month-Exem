@@ -78,7 +78,21 @@ const SingleRoute = () => {
             </div>
             <div className="all"></div>
 
-            
+            <div className="color">
+                <p>Select Color:</p>
+                <div className="color_all">
+                  <div className="al"></div>
+                </div>
+                <div className="color_all">
+                  <div className="al1"></div>
+                </div>
+                <div className="color_all">
+                  <div className="al2"></div>
+                </div>
+                <div className="color_all">
+                  <div className="al3"></div>
+                </div>
+            </div>
            </div>
         </div>
         <div className="single_week">
