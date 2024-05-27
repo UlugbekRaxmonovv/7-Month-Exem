@@ -109,6 +109,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
    .bannir_top_rigth{
     display: flex;
     align-items: center;
@@ -156,4 +157,116 @@
         }
     }
    } 
+}
+
+@media(max-width:990px){
+    .banir_all{
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+       .bannir_top_rigth{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+       }
+    }
+}
+@media(max-width:550px){
+    .banner{
+    .banner_all{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    }
+}
+@media(max-width:450px){
+    .banner{
+    .banner_all{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .banner_row{
+            text-align: center;
+            h1{
+               text-align: center;
+                color: #FFFFFF;
+                            
+            }
+            p{
+              text-align: center;
+            }
+            h5{
+                text-align: center;
+
+                
+            }
+            .br{
+                width: 50px;
+                height: 2px;
+                background-color: white;
+               display: none;
+            }
+        }  
+    }
+    }
+    .bannir_top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 50px 0;
+    }
+}
+
+@media(max-width:400px){
+    .banner{
+    .banner_all{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 50px 0;
+        .banner_row{
+            text-align: center;
+            h1{
+               text-align: center;
+                color: #FFFFFF;
+                font-size: 42px;
+                line-height: 42px;
+                            
+            }
+            p{
+              text-align: center;
+              margin-top: -50px;
+            }
+            h5{
+                text-align: center;
+                margin-top: 30px;
+
+                
+            }
+        }  
+    }
+    }
+
+}
+
+@media(max-width:340px){
+    .banir_all{
+       .bannir_top_rigth{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+       }
+    }
 }

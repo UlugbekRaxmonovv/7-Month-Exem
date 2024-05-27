@@ -1,11 +1,13 @@
 footer{
     background: #BCDDFE;
     padding: 50px 0;
+    margin-top: 70px;
     .footir_all{
         display: flex;
         justify-content: 
         space-between;
         align-items: self-start;
+        flex-wrap: wrap;
         margin-top: 20px;
         .footir_row{
             img{
@@ -91,6 +93,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 40px;
     .footir_well{
         h1{
@@ -100,10 +103,8 @@ footer{
             line-height: 27px;
             text-align: left;
             color: #22262A;
+            padding: 15px 0;
             
-        }
-       li{
-            margin-top: 30px;
         }
         ul li a{
             font-family: Poppins;
@@ -138,4 +139,90 @@ footer{
             height: 25.34px;   
         }
     }
+}
+
+@media(max-width:990px){
+    .footir_all{
+        padding: 0 10px;
+    }
+    .footir_alt{
+        padding: 0 10px;
+    }
+    .footir_bottom{
+        padding: 0 10px;
+    }
+
+}
+
+@media(max-width:550px){
+   
+    footer{
+        .footir_all{
+            display: flex;
+             justify-content: center;
+            align-items: self-start;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 20px;
+
+        }
+    }
+    .footir_alt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    .footir_bottom{
+        border-top: 1px solid #F6F7F8;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+}
+
+
+
+@media(max-width:400px){
+   
+    footer{
+        .footir_all{
+            display: flex;
+            //  justify-content: center;
+            align-items: self-start;
+           flex-direction: column;
+            gap: 40px;
+            margin-top: 20px;
+            padding: 0 80px;
+
+        }
+    }
+    .footir_alt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    .footir_bottom{
+        border-top: 1px solid #F6F7F8;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 40px 0;
+        .footir_bottom_lift{
+            margin-top:  10px;
+
+        }
+
+    }
+
 }

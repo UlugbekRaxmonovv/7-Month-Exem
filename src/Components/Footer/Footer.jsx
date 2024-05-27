@@ -32,11 +32,16 @@ let links =[
 
 let javob = links?.map((link) =>(
     <div className="footir_well" key={link.id}>
-                        <ul>
                             <h1>{link.h1}</h1>
-                            <li>
-                                <a href="">{link.links}</a>
-                            </li>
+                        <ul>
+                            {
+                                link?.links?.map((link,inx) =>(
+                                    <li key={inx}>
+                                        <a href="">{link}</a>
+                                    </li>
+                                ))
+
+                            }
                         </ul>
                     </div>
 ))

@@ -4,7 +4,7 @@ import {useGetProductsQuery} from '../../Components/context/productApi';
 import Product from '../../Components/Product/Product'
 import Footer from '../../Components/Footer/Footer';
 import Banner from '../../Components/Banner/Banner';
-
+import Featured from '../../Components/Featured/Featured';
 const Home = () => {
     const { data,isLoading } = useGetProductsQuery();
     console.log(data);
@@ -13,6 +13,7 @@ const Home = () => {
           <Main/>
             <Product data={data}  loading={isLoading}/>
             <Banner/>
+            <Featured/>
             <Footer/>
 
         </div>

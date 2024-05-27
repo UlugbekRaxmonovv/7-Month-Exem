@@ -1,0 +1,362 @@
+.alt{
+    h1{
+        text-align: center;
+        font-family: Poppins;
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 52.5px;
+        color: #22262A;
+        padding: 50px 0;
+        margin-top: 50px;
+
+    }
+}
+.mySwiper{
+    display: flex;
+    .all{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 50px 0;
+        .featur_all{
+            display: flex;
+            align-items: self-start;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            .start{
+                display: flex;
+               align-items: center;
+               gap: 10px;
+               margin-top: 20px;
+                .star_all{
+                    svg{
+                        color: yellow;
+                    }
+                }
+            }
+            .img{
+                img{
+                    max-width: 154px;
+                    width: 100%;
+                    height: 154px;
+                }
+                h1{
+                    max-width: 200.29px;
+                    width: 100%;
+                    height: 54px;
+                    top: 3853.36px;
+                    left: 291.23px;
+                    gap: 0px;
+                    opacity: 0px;
+                    font-family: Proxima Nova;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 26.8px;
+                    text-align: left;
+                    color: #262626;
+                                        
+                }
+                p{
+                    font-family: Poppins;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    text-align: left;
+                    color: #FF4858;
+                    margin-top: 20px;
+                    span{
+                        font-family: Proxima Nova;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 24.36px;                   
+                        top: 3970.64px;
+                        left: 782.98px;
+                        gap: 0px;
+                        opacity: 0px;
+                        color: #C1C8CE;
+                        text-decoration: line-through;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+}
+
+ .swiper-button-next::after{
+    display: none;
+}
+ .swiper-button-prev::after{
+    display: none;
+}
+.bannir_input{
+    max-width: 635px;
+    width: 100%;
+    height: 64px;
+    top: 4135px;
+    left: 419.47px;
+    gap: 0px;
+    opacity: 0px;
+    border: 2px solid #BCDDFE;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25%;
+    margin-top: 20px;
+   .alt{
+    input{
+        outline: none;
+        border: none;
+        padding: 0 10px;
+        font-family: Proxima Nova;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.92px;
+        text-align: left;
+        color: #262626;
+        width: 100%;
+        
+    }
+    button{
+        width: 127px;
+        height: 63px;
+        background: #40BFFF;
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+        border: none;
+        outline: none;
+        margin-top: -21px;
+        
+    }
+   }
+
+        
+}
+
+
+@media(max-width:800px){
+    .bannir_input{
+        max-width: 635px;
+        width: 100%;
+        height: 64px;
+        top: 4135px;
+        left: 419.47px;
+        gap: 0px;
+        opacity: 0px;
+        border: 2px solid #BCDDFE;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-top: 20px;
+       .alt{
+        input{
+            outline: none;
+            border: none;
+            padding: 0 10px;
+            font-family: Proxima Nova;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21.92px;
+            text-align: left;
+            color: #262626;
+            width: 100%;
+            
+        }
+        button{
+            width: 127px;
+            height: 63px;
+            background: #40BFFF;
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            color: #FFFFFF;
+            border: none;
+            outline: none;
+            margin-top: -21px;
+            
+        }
+       }
+    
+            
+    }
+}
+
+
+
+@media(max-width:700px){
+    .bannir_input{
+        max-width: 635px;
+        width: 100%;
+        height: 64px;
+        top: 4135px;
+        left: 419.47px;
+        gap: 0px;
+        opacity: 0px;
+        border: 2px solid #BCDDFE;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-top: 20px;
+
+            
+    }
+}
+
+@media(max-width:650px){
+    .bannir_input{
+        max-width: 605px;
+        width: 100%;
+        height: 64px;
+        top: 4135px;
+        left: 419.47px;
+        gap: 0px;
+        opacity: 0px;
+        border: 2px solid #BCDDFE;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+    
+            
+    }
+}
+
+@media(max-width:600px){
+    .bannir_input{
+        max-width: 550px;
+        width: 100%;
+        height: 64px;
+        top: 4135px;
+        left: 419.47px;
+        gap: 0px;
+        opacity: 0px;
+        border: 2px solid #BCDDFE;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+    
+            
+    }
+}
+
+@media(max-width:550px){
+    .bannir_input{
+        max-width: 500px;
+        width: 100%;
+        height: 64px;
+        top: 4135px;
+        left: 419.47px;
+        gap: 0px;
+        opacity: 0px;
+        border: 2px solid #BCDDFE;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+    
+            
+    }
+}
+
+@media(max-width:500px){
+    .bannir_input{
+        max-width: 450px;
+        width: 100%;
+        height: 64px;
+        top: 4135px;
+        left: 419.47px;
+        gap: 0px;
+        opacity: 0px;
+        border: 2px solid #BCDDFE;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    
+            
+    }
+}
+
+@media(max-width:450px){
+    .bannir_input{
+        max-width: 400px;
+        width: 100%;
+        height: 64px;
+        top: 4135px;
+        left: 419.47px;
+        gap: 0px;
+        opacity: 0px;
+        border: 2px solid #BCDDFE;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    
+            
+    }
+}
+
+@media(max-width:400px){
+    .alt{
+        h1{
+            text-align: center;
+            font-family: Poppins;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 52.5px;
+            color: #22262A;
+            padding: 50px 0;
+            margin-top: 50px;
+            padding: 0 10px;
+    
+        }
+    }
+    .bannir_input{
+        max-width: 350px;
+        width: 100%;
+        height: 64px;
+        top: 4135px;
+        left: 419.47px;
+        gap: 0px;
+        opacity: 0px;
+        border: 2px solid #BCDDFE;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+       .alt{
+        button{
+            width:   120px;
+            height: 63px;
+            background: #40BFFF;
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            color: #FFFFFF;
+            border: none;
+            outline: none;
+            margin-top: -21px;
+            
+        }
+       }
+    
+            
+    }
+}
