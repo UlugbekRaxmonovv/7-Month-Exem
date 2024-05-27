@@ -6,6 +6,7 @@ import { FiShoppingCart } from "react-icons/fi";
 import { FaRegUser, FaRegHeart } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
 import { TbMenuDeep } from "react-icons/tb";
+import { MdBorderColor } from "react-icons/md";
 
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
@@ -40,6 +41,9 @@ const Navbar = () => {
                                 <span>0</span>
                             </div>
                             <div className="link">
+                                <div className="icon_all">
+                                <MdBorderColor />
+                                </div>
                                 <p>Items</p>
                             </div>
                             <div className="link">

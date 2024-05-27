@@ -44,7 +44,12 @@
         .link {
             display: flex;
             align-items: center;
-
+      .icon_all{
+        display: none;
+        width: 24px;
+        height: 24px;
+        color: #2b2b2b;
+      }
             svg {
                 width: 24px;
                 height: 24px;
@@ -197,6 +202,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+   
     .nav{
         position: fixed;
         bottom: 0;
@@ -207,6 +213,15 @@ nav {
         background-color: white;
         z-index: 300000;
         width: 100%;
+        .link{
+            .icon_all{
+                display: block;
+              }
+        }
+          p{
+            display:none;
+          } 
+          
     }
 }
 }
