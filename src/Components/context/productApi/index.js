@@ -1,6 +1,6 @@
 import { api } from '../Api/index'
-
 export const productApi = api.injectEndpoints({
+
   endpoints: (build) => ({
     // Get request
     getProducts: build.query({

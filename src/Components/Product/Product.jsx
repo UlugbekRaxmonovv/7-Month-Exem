@@ -2,10 +2,9 @@ import React from 'react';
 import './Product.scss'
 import { FaStar } from "react-icons/fa6";
 import Loading from '../Loading/Loading';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 const Product = ({data,loading}) => {
-
     let links = data?.map((link) =>(
         <div className="wrapper" key={link.id}>
         <div className="card">
@@ -78,7 +77,9 @@ const Product = ({data,loading}) => {
             <div className="hammasi">
             {links}
             </div>
+            <h1 className='h1_link'>LOAD MORE</h1>
             </div>
+              
         </div>
     );
 }
