@@ -442,3 +442,65 @@ margin-top: 40px !important;
                                 
                                           
                                         }
+
+                                        @media(max-width:400px){
+                            
+                                            .contact{
+                                             display: flex;
+                                             align-items: center;
+                                             flex-wrap: wrap;
+                                             justify-content: center;
+                                             gap: 200px;
+                                             max-width: 1000px;
+                                             width: 100%;
+                                             box-shadow: none;
+                                             margin-top: -10px !important;
+                                         } 
+                                             .contact_all{
+                                                 img{
+                                                   margin-top: -210px;
+                                                   max-width: 380px;
+                                                   width: 100%;
+                                         
+                                         
+                                                 }
+                                                 }
+                                         
+                                                   .input{
+                                                       margin-left: -50px;
+                                                       max-width: 350px !important;
+                                                       width: 100%;
+                                                       margin-top: -490px;
+                                                       
+                                                       form{
+                                                           .inpu_alt{
+                                                             padding: 0 20px;
+                                                             input{
+                                                               width: 350px !important;
+                                                               height: 73.17px;
+                                                             }  
+                                                             textarea{
+                                                             resize: none;
+                                                             outline: none;
+                                                             width: 350px !important;
+                                               
+                                               
+                                                             }     
+                                                            
+                                                           }
+                                                       }
+                                                   }
+                                         
+                                                   
+                                                 }
+                                                 @media(max-width:380px){
+ 
+                                                     .contact_all{
+                                                         img{
+                                                           margin-top: -210px;
+                                                           max-width: 350px;
+                                                           width: 100%;
+                                                           margin-left: 10px;
+                                                         }
+                                                        }
+                                                    }
