@@ -318,6 +318,9 @@ margin-top: 40px !important;
 
                         
                 @media(max-width:500px){
+                    .alt{
+                        margin-top: -200px;
+                       }
                     .contact_all{
                         img{
                           margin-top: -210px;
@@ -444,7 +447,9 @@ margin-top: 40px !important;
                                         }
 
                                         @media(max-width:400px){
-                            
+                                            .alt{
+                                                margin-top: -200px;
+                                               }
                                             .contact{
                                              display: flex;
                                              align-items: center;

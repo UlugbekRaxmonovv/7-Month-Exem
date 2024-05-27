@@ -60,7 +60,9 @@ Phase 1, Lagos.</h5>
                 </div>
             </div>
           </div>
-          <Footer />
+        <div className="alt">
+        <Footer />
+        </div>
         </div>
     );
 }
