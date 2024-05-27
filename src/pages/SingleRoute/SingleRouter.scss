@@ -635,5 +635,24 @@ p{
         }
         .single_week_all{
             height: 550px;
+            .p{
+                padding: 20px 0;
+               p{
+                line-height: 15px !important;
+                
+               }
+            }
         }
+}
+@media(max-width:400px){
+    .single_week_all{
+        .p{
+            padding: 20px 0;
+           p{
+            line-height: 15px !important;
+            
+           }
+        }
+
+    }
 }
