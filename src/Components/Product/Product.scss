@@ -38,7 +38,7 @@ color: #22262A;
     flex-wrap: wrap;
     align-items: center;
     padding: 50px 0;
-    gap: 20px;
+    gap: 90px;
 
 }
 .wrapper{
@@ -47,7 +47,63 @@ color: #22262A;
     align-items: center;
     flex-direction: column;
     gap: 40px;
-    border: 1px solid #F0F0F0;
+    border: 1px solid #F0F0F0;    
+   .all1{
+    position: relative;
+    .like {
+        position: absolute;
+        z-index: 10000;
+        width: 299.5px;
+        height: 272.5px;
+        background: #ffffff;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        transition: 0.3s ease;
+    
+        button {
+          border: none;
+          border-radius:50%;
+          width: 50px;
+          height: 49px;
+          background: #ffffff;
+          border: 2px solid #33a0ff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          transition: 0.3s ease;
+        }
+    
+        .svg {
+          font-size: 24px;
+          color: #33a0ff !important;
+          transition: 0.3s ease;
+        }
+      }
+   }
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  
+        .like {
+          opacity: 100%;
+          transition: 0.3s ease;
+          z-index: 30000;
+        }
+  
+        #btn_cart {
+          opacity: 1;
+          transition: 0.3s ease;
+        }
+    
+    }
+    
     
     .card{
         width: 299.5px;
@@ -86,13 +142,14 @@ color: #22262A;
     }
 
  .h1{
+    text-align: center;
     h1{
         font-family: Poppins;
         font-size: 18px;
         font-weight: 700;
         line-height: 27px;
         letter-spacing: 0.5px;
-        text-align: left;
+        text-align: center;
         color: #223263;
         margin-top: -40px;
         display: -webkit-box;

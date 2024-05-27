@@ -8,6 +8,8 @@ import NotFound from './pages/NotFound/NotFound'
 import Navbar from './Components/Navbar/Navbar.jsx'
 import Home from './pages/Home/Home'
 import Card from './pages/Card/Card.jsx'
+import Revewies from './pages/Revewies/Revewies.jsx';
+import Another from './pages/Another/Another.jsx';
 import SingleRoute from './pages/SingleRoute/SingleRoute.jsx';
 import { Route,Routes } from 'react-router-dom';
 
@@ -17,6 +19,8 @@ const App = () => {
       <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/reviews" element={<Revewies />} />
+      <Route path="/another" element={<Another />} />
       <Route path="/wishlist/" element={<Wishlist />} />
       <Route path="/product/:id" element={<SingleRoute />} />
       <Route path="/contact" element={<Contact />} />

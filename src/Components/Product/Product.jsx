@@ -3,18 +3,31 @@ import './Product.scss'
 import { FaStar } from "react-icons/fa6";
 import Loading from '../Loading/Loading';
 import { Link} from 'react-router-dom';
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { CiHeart } from "react-icons/ci";
 
 const Product = ({data,loading}) => {
     let links = data?.map((link) =>(
         <div className="wrapper" key={link.id}>
+            
         <div className="card">
+        <div className="like">
+        <div className="all1">
+        <div className="like">
+        <button><CiHeart className="svg" /></button>
+        <button><AiOutlineShoppingCart className="svg" /></button>
+      </div>
+        </div>
+      </div>
            <div className="all">HOT</div>
-          <Link to={`/product/${link.id}`}>
+       
           <img src={link.image} alt="" />
-          </Link>
+         
         </div>
         <div className="h1" title={link.title}>
-            <h1>{link.title}</h1>
+               <Link to={`/product/${link.id}`}>
+               <h1>{link.title}</h1>
+               </Link>
             <div className="start">
             <div className="star_all">
                 <FaStar />
