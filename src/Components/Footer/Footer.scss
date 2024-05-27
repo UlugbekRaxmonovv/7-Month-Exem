@@ -1,0 +1,141 @@
+footer{
+    background: #BCDDFE;
+    padding: 50px 0;
+    .footir_all{
+        display: flex;
+        justify-content: 
+        space-between;
+        align-items: self-start;
+        margin-top: 20px;
+        .footir_row{
+            img{
+                margin-top: -10px;
+            }
+            h1{
+                font-family: Poppins;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 27px;
+                text-align: left;
+                color: #22262A;
+                
+            }
+            p{
+                width: 221.1px;
+                height: 75px;
+                top: 4499.03px;
+                left: 134.09px;
+                gap: 0px;
+                opacity: 0px;
+                font-family: Proxima Nova;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14.62px;
+                text-align: left;
+                color: #22262A;
+                margin-top: 5px;
+                
+            }
+            h5{
+                width: 198px;
+                height: 45px;
+                top: 4502.29px;
+                left: 663.56px;
+                gap: 0px;
+                opacity: 0px;
+                font-family: Proxima Nova;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14.62px;
+                text-align: left;
+                color: #22262A;
+                margin-top: 15px;
+                
+            }
+            h4{
+                width: 148.11px;
+                height: 63px;
+                top: 4506.22px;
+                left: 1050.81px;
+                gap: 0px;
+                opacity: 0px;
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
+                text-align: left;
+                color: #22262A;
+                margin-top: 15px;
+
+            }
+            .icons{
+                display: flex;
+                gap: 20px;
+                margin-top: 20px;
+                font-size: 20px;
+                :nth-child(2):hover{
+                    color: blue;
+                }
+                :nth-child(1):hover{
+                    color: blue;
+                     
+                }
+            }
+          
+            
+        }
+    }
+
+}
+.footir_alt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    .footir_well{
+        h1{
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 27px;
+            text-align: left;
+            color: #22262A;
+            
+        }
+       li{
+            margin-top: 30px;
+        }
+        ul li a{
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            text-align: left;
+            color: #262626;
+            
+        }
+    }
+}
+.footir_bottom{
+    border-top: 1px solid #F6F7F8;
+    margin-top: 40px;
+    display: flex;
+    justify-content:space-between ;
+    .footir_bottom_lift{
+        margin-top: 50px;
+        p{
+            font-family: Proxima Nova;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.05px;
+            text-align: left;
+            color: #C1C8CE;
+            
+        }
+        img{
+            max-width: 212.44px;
+            width: 100%;
+            height: 25.34px;   
+        }
+    }
+}
