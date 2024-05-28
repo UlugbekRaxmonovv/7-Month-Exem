@@ -1,5 +1,6 @@
 import React from 'react';
 import './NotFound.scss'
+import Footer from '../../Components/Footer/Footer'
 
 const NotFound = () => {
     return (
@@ -9,6 +10,7 @@ const NotFound = () => {
                 <img src="https://webhostingmedia.net/wp-content/uploads/2018/01/http-error-404-not-found.png" alt="" />
                 </div>
             </div>
+            <Footer />
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import './Login.scss'
 import { Link } from 'react-router-dom';
+import ProductTop from '../../Components/PruductTop'
 import Footer from '../../Components/Footer/Footer';
 import axios from 'axios';
 const Login = () => {
@@ -25,6 +26,7 @@ const Login = () => {
   }
     return (
         <div>
+  <PruductTop/>
            <div className="single">
             <div className="container">
               <div className="single_row">

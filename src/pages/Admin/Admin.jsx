@@ -1,15 +1,18 @@
 import React from 'react';
 import './Admin.scss'
 import { Link } from 'react-router-dom';
+import Footer from '../../Components/Footer/Footer';
+// import ProductTop from '../../Components/ProductTop';
 
 const Admin = () => {
     return (
         <div>
+            <ProductTop/>
             <div className="single">
             <div className="container">
               <div className="single_row">
               <div className="single_alt">
-                    <Link to={'/'}>Home</Link> /
+                    <Link to={'/'}>Home</Link>
                 </div>
                 <div className="single_alt">
                     <p>Contact Us</p> 
@@ -30,6 +33,7 @@ const Admin = () => {
             </div>
              </div>
           </div>
+          <Footer />
         </div>
     );
 }
