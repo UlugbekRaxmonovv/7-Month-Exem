@@ -5,20 +5,31 @@ import Loading from '../Loading/Loading';
 import { Link} from 'react-router-dom';
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CiHeart } from "react-icons/ci";
-import { useDispatch } from 'react-redux';
+import { useDispatch,useSelector } from 'react-redux';
 import {addToCart} from '../../Components/context/Card/index'
-import { toast } from 'react-toastify';
+import {toggleEvent} from '../../Components/context/Heart'
+import { FaHeart } from "react-icons/fa";
 import axios from 'axios';
 
 const Product = ({data,loading}) => {
   const dispatch = useDispatch();
+  let wishlist = useSelector(s => s.heart.value)
     const [count,setCount] = useState(1);
     const [dataSet,  setProducts] = useState(data)
     const [setloading,setLoading] = useState(loading)
+    const[ value,setValue] =useState('All')
+    const [categories,setCategories] = useState([])
+    let javob= value
+   if(value === "All"){
+     javob = '/products'
+     }
+      else{
+       javob = `/products/category/${value}`
+       }
     useEffect(() => {
       setLoading(true);
         axios
-            .get(`https://fakestoreapi.com/products?limit=${count * 8}`)
+            .get(`https://fakestoreapi.com${javob}?limit=${count * 8}`)
             .then((res) => {
                 setProducts(res.data);
                 setLoading(false);
@@ -29,21 +40,12 @@ const Product = ({data,loading}) => {
                 setLoading(false);
               
             });
-    }, [count]);
+    }, [count,value]);
 
     const handleLoadMore = () => {
         setCount(prevCount => prevCount + 1);
     };
 
-    const[ value,setVale] =useState('All')
-    const [categories,setCategories] = useState([])
-    let javob = ""
-    if(value == "all"){
-      javob = "/products"
-    }
-    else{
-      javob = `/products/category/${value}`
-    }
 useEffect(() =>{
 axios
 .get(`https://fakestoreapi.com/products/categories`)
@@ -53,14 +55,19 @@ axios
 .catch(error =>{
     console.log('>>>>>>>>>>>>>>>' , error);
 })
-},[value,javob]);
+},[]);
 
 
-  
-  let btns= categories?.map((el,inx) =>(
-    <button onClick={() =>setVale(el)}  key={inx}>{el}</button>
-  ))
 
+const handleCategoryChange = (category) => {
+  setValue(category);
+  setCount(1); 
+};
+
+
+const categoryButtons = categories.map((el, idx) => (
+  <button onClick={() => handleCategoryChange(el)} key={idx}>{el}</button>
+));
 
     let links = dataSet?.map((link) =>(
         <div className="wrapper" key={link.id}>
@@ -69,7 +76,12 @@ axios
         <div className="like">
         <div className="all1">
         <div className="like">
-        <button><CiHeart className="svg" /></button>
+        <button onClick={() =>dispatch(toggleEvent(link))}>
+          {
+            wishlist?.some(item => item.id === link.id) ? <FaHeart  style={{color:'red',fontSize:'25px'}} />
+            : <CiHeart className="svg" />
+          }
+          </button>
         <button onClick={() => dispatch(addToCart(link)) }><AiOutlineShoppingCart className="svg" /></button>
       </div>
         </div>
@@ -113,12 +125,12 @@ axios
                 <h1 className='teg_all'>BEST SELLER</h1>
                 <div className="category">
                 <div className="category_all">
-                    <button  onClick={() =>setVale('All')}>
-                        all
+                    <button  onClick={() => handleCategoryChange('All')}>
+                        All
                     </button>
                     </div>
                     <div className="category_all">
-                      {btns}
+                      {categoryButtons}
                     </div>
                 </div>
 

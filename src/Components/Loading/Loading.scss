@@ -1,14 +1,15 @@
 
-.skeleton__wrapper {
+.skeleton__wrapperr {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 40px;
    
     
   }
   
-  .skeleton__image {
-    width: 250px;
+  .skeleton__images {
+    width: 270px;
     height: 272px;
     background: #ddd;
     border-radius: 10px;

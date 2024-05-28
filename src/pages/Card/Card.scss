@@ -153,6 +153,7 @@ table {
       height: 50px;
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       align-items: self-start;
       gap: 150px;
       .price_all{
@@ -199,3 +200,40 @@ table {
       
     }
   }
+
+  @media(max-width:990px){
+    .tabli{
+      display: flex;
+      align-items: self-start;
+     justify-content: center;
+      padding: 20px 0;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 50px;
+    }
+  }
+
+
+  @media(max-width:580px){
+
+    }
+    .tabli_alt{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 400px;
+      width: 100%;
+      height: 60px;
+      border: 2px solid #F1F3F4 ;
+      .tabli_row{
+ input{
+  width: 400px !important;
+  border: 2px solid #F1F3F4 ;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+ }
+      }    
+       
+    }
+  

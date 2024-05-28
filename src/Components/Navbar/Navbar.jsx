@@ -11,7 +11,9 @@ import { useSelector } from 'react-redux';
 
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
+    let wishlist = useSelector(s => s.heart.value)
     const carts = useSelector(state => state.cart.value);
+    console.log(wishlist);
     
 
     return (
@@ -36,11 +38,11 @@ const Navbar = () => {
                             </div>
                             <div className="link">
                                 <Link to="/card"><FiShoppingCart /></Link>
-                                <span>{carts.lenght}0</span>
+                                <span>{carts.length}</span>
                             </div>
                             <div className="link">
                                 <Link to="/wishlist"><FaRegHeart /></Link>
-                                <span>0</span>
+                                <span>{wishlist.length}</span>
                             </div>
                             <div className="link">
                                 <div className="icon_all">

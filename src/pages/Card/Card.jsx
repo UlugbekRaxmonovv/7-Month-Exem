@@ -79,6 +79,7 @@ const Card = () => {
     {/* <th onClick={() => dispatch(deleteAllCart(inx))} style={{fontSize:'30px',color:'red',backgroundColor:'white'}}><AiTwotoneDelete /></th> */}
   </tr>
 {links}
+
 </table>
 
 <div className="tabli container">
