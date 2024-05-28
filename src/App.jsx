@@ -12,11 +12,14 @@ import Revewies from './pages/Revewies/Revewies.jsx';
 import Another from './pages/Another/Another.jsx';
 import SingleRoute from './pages/SingleRoute/SingleRoute.jsx';
 import { Route,Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   return (
     <div>
       <Navbar />
+      <ToastContainer/>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/reviews" element={<Revewies />} />

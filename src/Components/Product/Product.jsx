@@ -7,6 +7,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CiHeart } from "react-icons/ci";
 import { useDispatch } from 'react-redux';
 import {addToCart} from '../../Components/context/Card/index'
+import { toast } from 'react-toastify';
 import axios from 'axios';
 
 const Product = ({data,loading}) => {
@@ -69,7 +70,7 @@ axios
         <div className="all1">
         <div className="like">
         <button><CiHeart className="svg" /></button>
-        <button onClick={() => dispatch(addToCart(link))}><AiOutlineShoppingCart className="svg" /></button>
+        <button onClick={() => dispatch(addToCart(link)) }><AiOutlineShoppingCart className="svg" /></button>
       </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-.alt{
+.altt{
     h1{
         text-align: center;
         font-family: Poppins;
@@ -106,7 +106,7 @@
     justify-content: space-between;
     margin-left: 25%;
     margin-top: 20px;
-   .alt{
+   .altt{
     input{
         outline: none;
         border: none;
@@ -120,7 +120,7 @@
         width: 100%;
         
     }
-    button{
+    .btn{
         width: 127px;
         height: 63px;
         background: #40BFFF;
@@ -156,7 +156,7 @@
         justify-content: space-between;
         margin-left: 10%;
         margin-top: 20px;
-       .alt{
+       .altt{
         input{
             outline: none;
             border: none;
@@ -312,7 +312,7 @@
 }
 
 @media(max-width:400px){
-    .alt{
+    .altt{
         h1{
             text-align: center;
             font-family: Poppins;
@@ -339,7 +339,7 @@
         display: flex;
         justify-content: space-between;
         margin-top: 20px;
-       .alt{
+       .altt{
         button{
             width:   120px;
             height: 63px;

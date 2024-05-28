@@ -2,14 +2,13 @@
 .skeleton__wrapper {
     display: flex;
     justify-content: center;
-    gap: 20px;
     flex-wrap: wrap;
    
     
   }
   
   .skeleton__image {
-    width: 299px;
+    width: 250px;
     height: 272px;
     background: #ddd;
     border-radius: 10px;
@@ -18,7 +17,7 @@
   
   .skeleton__title,
   .skeleton__price {
-    width: 90%;
+    width: 70%;
     height: 30px;
     background: #ddd;
     margin-top: 10px;
@@ -26,7 +25,7 @@
   }
   
   .skeleton__price {
-    width: 70%;
+    width: 60%;
   }
   
   .skeleton__anime {

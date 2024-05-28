@@ -7,9 +7,11 @@ import { FaRegUser, FaRegHeart } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
 import { TbMenuDeep } from "react-icons/tb";
 import { MdBorderColor } from "react-icons/md";
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
+    const carts = useSelector(state => state.cart.value);
     
 
     return (
@@ -34,7 +36,7 @@ const Navbar = () => {
                             </div>
                             <div className="link">
                                 <Link to="/card"><FiShoppingCart /></Link>
-                                <span>0</span>
+                                <span>{carts.lenght}0</span>
                             </div>
                             <div className="link">
                                 <Link to="/wishlist"><FaRegHeart /></Link>

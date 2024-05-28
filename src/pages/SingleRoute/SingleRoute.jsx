@@ -220,7 +220,7 @@ const SingleRoute = () => {
      <button disabled={count <= 0} onClick={go}><VscChevronDown /></button>
         </div>
      </div>
-    <div className="oll">
+    <div className="olll">
     <div className="cart">
      <div className="cart_all">
       <LuShoppingCart />
