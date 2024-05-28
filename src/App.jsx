@@ -29,9 +29,9 @@ const App = () => {
       <Route path="/contact" element={<Contact />} />
       <Route path="/login" element={<Login />} />
       <Route path="/card" element={< Card/>} />
-      <Route path='/' element={<Auth/>}>
+      {/* <Route path='/' element={<Auth/>}> */}
       <Route path='/admin' element={<Admin/>} />
-    </Route>
+    {/* </Route> */}
     <Route path='*' element={<NotFound/>} />
     </Routes>
     </div>

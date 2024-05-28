@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import {toggleEvent} from '../../Components/context/Heart'
 import { useDispatch } from 'react-redux';
 import { FaHeart } from "react-icons/fa";
+import Footer from '../../Components/Footer/Footer'
 
 const Wishlist = () => {
     let wishlist = useSelector(s => s.heart.value)
@@ -64,6 +65,21 @@ const Wishlist = () => {
     ))
     return (
         <div>
+
+<div className="single">
+            <div className="container">
+              <div className="single_row">
+              <div className="single_alt">
+                    <Link to={'/'}>Home</Link> /
+                </div>
+                <div className="single_alt">
+                    <p>Wishlist</p> 
+                </div>
+              </div>
+            </div>
+    
+          </div>
+           <h1 className='wish'>Wishlist</h1>
            <div className="hammasi">
            {
             wishlist.length ? 
@@ -76,6 +92,8 @@ const Wishlist = () => {
            }
          
             </div>
+
+            <Footer/>
         </div>
     );
 }

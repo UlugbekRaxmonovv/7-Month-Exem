@@ -1,0 +1,57 @@
+.admin_all{
+    padding: 100px 0;
+    .admin_all_row{
+     h1{
+        font-family: Poppins;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 60px;
+        letter-spacing: -0.02em;
+        color: #000000;
+        padding: 0 10px;
+        
+     }
+     p{
+        max-width: 1255px;
+        width: 100%;
+       padding: 10px 10px;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 28.8px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        color: #000000;
+        margin-top: 37px;
+        
+        
+     }
+     .btn_alt{
+        max-width: 338px;
+        width: 100%;
+        height: 70px;
+        gap: 0px;
+        border-radius: 10px ;
+        background: #33A0FF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 47px;
+       margin-left: 10px;
+
+        button{
+            font-family: Nunito;
+            font-size: 24px;
+            font-weight: 800;
+            line-height: 32.74px;
+            letter-spacing: -0.02em;
+            text-align: center;
+            background: #33A0FF;
+            color: #FFFFFF;
+            border: none;
+            
+        }
+     }
+
+    }
+}

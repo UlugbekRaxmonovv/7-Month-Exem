@@ -10,6 +10,7 @@ export const productApi = api.injectEndpoints({
       }),
       providesTags:["Product"]
     }),
+
   //  singleroute
   
     getDetialProduct:build.query({

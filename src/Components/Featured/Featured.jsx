@@ -76,7 +76,7 @@ const Featured = () => {
                         navigation={true}
                         modules={[Navigation, Autoplay]}
                         autoplay={{
-                            delay: 2000,
+                            delay: 3000,
                             disableOnInteraction: false,
                         }}
                         className="mySwiper"
