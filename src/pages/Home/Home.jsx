@@ -7,7 +7,6 @@ import Banner from '../../Components/Banner/Banner';
 import Featured from '../../Components/Featured/Featured';
 const Home = () => {
     const { data,isLoading } = useGetProductsQuery();
-    console.log(data);
     return (
         <div>
           <Main/>

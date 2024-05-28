@@ -17,7 +17,7 @@ import { VscChevronUp } from "react-icons/vsc";
 import { VscChevronDown } from "react-icons/vsc";
 import rasm5 from '../../assets/img/rasm10.png'
 import Footer from '../../Components/Footer/Footer';
-import Loading from '../../Components/Loading/Loading';
+import LoadingAll from '../../Components/LoadingALL/LoadingAll';
 import {useGetDetialProductQuery} from '../../Components/context/productApi'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
@@ -102,6 +102,9 @@ const SingleRoute = () => {
             </div>
    
           </div>
+          {
+            isLoading ? <LoadingAll/> : ""
+          }
           <div className="single_row_link container">
           <div className="single_week">
             <div className="img">

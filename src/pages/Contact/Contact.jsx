@@ -96,6 +96,7 @@ Phase 1, Lagos.</h5>
                 </div>
             </div>
           </div>
+          
         <div className="alt4">
         <Footer />
         </div>

@@ -1,0 +1,110 @@
+
+.skeleton__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    flex-wrap: wrap;
+   
+    
+  }
+  
+  .skeleton__image {
+    width: 350px;
+    height: 300px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-top: 80px;
+  }
+  .app{
+    width: 500px;
+    height: 300px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-top: 80px;
+  }
+  .skeleton{
+    width: 290px;
+    height: 272px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-top: 80px;
+  }
+  .skeleton__title,
+  .skeleton__price {
+    width: 90%;
+    height: 30px;
+    background: #ddd;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  
+  .skeleton__price {
+    width: 70%;
+  }
+  
+  .skeleton__anime {
+    background: linear-gradient(90deg, #f7f7f7, #ddd, #f7f7f7);
+    background-size: 200%;
+    animation: skeletonAnime 1s linear 0s infinite;
+  }
+  .oll{
+    display: flex;
+    gap: 5px;
+    margin-top: 50px;
+    
+  }
+  .skeleton__titler,
+  .skeleton__pricer,
+  .skeleton__pricer,
+  .skeleton__pricerr{
+    width: 80px;
+    height: 80px;
+    background: #ddd;
+    border-radius: 10px;
+  }
+
+
+  
+  @keyframes skeletonAnime {
+    to {
+      background-position: 200%;
+    }
+  }
+
+  @media(max-width:600px){
+    .app{
+        width: 500px;
+        height: 300px;
+        background: #ddd;
+        border-radius: 10px;
+        margin-top: 80px;
+      }
+  }
+  @media(max-width:500px){
+    .app{
+        width: 480px;
+        height: 300px;
+        background: #ddd;
+        border-radius: 10px;
+        margin-top: 80px;
+      }
+  }
+  @media(max-width:450px){
+    .app{
+        width: 400px;
+        height: 300px;
+        background: #ddd;
+        border-radius: 10px;
+        margin-top: 80px;
+      }
+  }
+
+  @media(max-width:400px){
+    .app{
+        width: 350px;
+        height: 300px;
+        background: #ddd;
+        border-radius: 10px;
+        margin-top: 80px;
+      }
+  }

@@ -5,9 +5,12 @@ import Loading from '../Loading/Loading';
 import { Link} from 'react-router-dom';
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CiHeart } from "react-icons/ci";
+import { useDispatch } from 'react-redux';
+import {addToCart} from '../../Components/context/Card/index'
 import axios from 'axios';
 
 const Product = ({data,loading}) => {
+  const dispatch = useDispatch();
     const [count,setCount] = useState(1);
     const [dataSet,  setProducts] = useState(data)
     const [setloading,setLoading] = useState(loading)
@@ -66,7 +69,7 @@ axios
         <div className="all1">
         <div className="like">
         <button><CiHeart className="svg" /></button>
-        <button><AiOutlineShoppingCart className="svg" /></button>
+        <button onClick={() => dispatch(addToCart(link))}><AiOutlineShoppingCart className="svg" /></button>
       </div>
         </div>
       </div>
