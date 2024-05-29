@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import ReactImageMagnify from 'react-image-magnify';
 import { CiHeart } from "react-icons/ci";
 import './SingleRouter.scss'
 import { GoHeart } from "react-icons/go";
@@ -50,7 +51,6 @@ const SingleRoute = () => {
            <div className="all">HOT</div>
        
           <img src={link.image} alt="" />
-         
         </div>
         <div className="h1" title={link.title}>
                <Link to={`/product/${link.id}`}>
@@ -109,10 +109,23 @@ const SingleRoute = () => {
           <div className="single_week">
             <div className="img">
                 {
-                  count1 ? <img src={data?.image } alt="" />
+                  count1 ? <ReactImageMagnify {...{
+                    smallImage: {
+                  alt: data?.title,
+                  isFluidWidth: true,
+                  src:data?.image,
+    
+              },
+                   largeImage: {
+                  src: data?.image ,
+                  width: 1129,
+                  height: 750,
+              }
+                 }} />
                   :
                   <h1>Loading</h1>
                 }
+                 
             </div>
              <div className="bot">
              <div className="bot_all">

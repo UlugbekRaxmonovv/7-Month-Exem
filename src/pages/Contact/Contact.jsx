@@ -28,7 +28,6 @@ const Contact = () => {
         api.send()
 
         setName('')
-        setSurname('')
         setEmail('')
         setTextarea('')
     }

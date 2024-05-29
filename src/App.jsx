@@ -14,8 +14,14 @@ import SingleRoute from './pages/SingleRoute/SingleRoute.jsx';
 import { Route,Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useLocation } from'react-router-dom';
+import './App.css';
 
 const App = () => {
+  const location = useLocation();
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   return (
     <div>
       <Navbar />

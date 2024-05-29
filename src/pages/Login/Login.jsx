@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import './Login.scss'
 import { Link } from 'react-router-dom';
-import ProductTop from '../../Components/PruductTop'
+import PruductTop from '../../Components/PruductTop'
 import Footer from '../../Components/Footer/Footer';
 import axios from 'axios';
 const Login = () => {
