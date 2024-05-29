@@ -23,6 +23,7 @@ const Card = () => {
   const [textarea,setTextarea] = useState('')
   const [lastname,setLastname] = useState('')
   const [phone,setPhone] = useState('')
+  const [adress,setAdress] = useState('')
 
 
 
@@ -31,7 +32,9 @@ const Card = () => {
 
   let javob1 =carts?.reduce((a,b) => a + (b.price  * b.quantity),0)
   let javob = Math.floor(javob1)
-    let links = carts?.map((inx) =>(
+    let links = carts?.filter((inx)=>{
+      return inx.title.toLowerCase().includes(adress.toLowerCase())
+    })?.map((inx) =>(
       <>
       <tr key={inx.id}>
         <td onClick={() =>dispatch(removeFromCart(inx))}><VscChromeClose style={{fontSize:'20px',marginLeft:'15%',color:'red'}} /></td>
@@ -128,7 +131,10 @@ const Card = () => {
   <div className="tabli_all">
   <div className="tabli_alt">
   <div className="tabli_row">
-      <input type="text"  placeholder='Voucher code'/>
+      <input
+      value={adress}
+      onChange={(e) => setAdress(e.target.value)}
+      type="text"  placeholder='Voucher code'/>
     </div>
     <div className="tabli_row">
     <button>Redeem</button>
