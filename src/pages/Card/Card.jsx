@@ -57,7 +57,7 @@ const Card = () => {
                 <button disabled={inx.quantity <= 1} onClick={() => dispatch(decrementCart(inx))}>-</button>
               </div>
               <div className="span_all">
-              <span>2</span>
+              <span>{inx.quantity}</span>
               </div>
               <div className="span_all">
                 <button onClick={() =>dispatch(incremented(inx))}>+</button>
