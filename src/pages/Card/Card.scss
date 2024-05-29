@@ -619,6 +619,16 @@ resize: none;
 }
 
 @media(max-width:450px){
+  .aj{
+    overflow:auto;
+    table{
+      tr{
+        th{
+          font-size: 20px
+        }
+      }
+    };
+  }
 .price{
   .price_all{
     button{
@@ -652,6 +662,16 @@ resize: none;
 }
 
 @media(max-width:400px){
+  .aj{
+    overflow:auto;
+    table{
+      tr{
+        th{
+          font-size: 20px
+        }
+      }
+    };
+  }
 .price{
   .price_all{
     button{
