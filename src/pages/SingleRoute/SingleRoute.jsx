@@ -20,6 +20,7 @@ import rasm5 from '../../assets/img/rasm10.png'
 import Footer from '../../Components/Footer/Footer';
 import LoadingAll from '../../Components/LoadingALL/LoadingAll';
 import {useGetDetialProductQuery} from '../../Components/context/productApi'
+import Loading from '../../Components/Loading/Loading';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -394,6 +395,10 @@ const SingleRoute = () => {
     <div className="alt1">
     <h1>RELATED PRODUCTS</h1>
     </div>
+    {
+      isLoading ? <Loading/>
+      : ""
+    }
     <div className="hammasi">
             {links}
             </div>

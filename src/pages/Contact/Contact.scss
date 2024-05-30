@@ -87,12 +87,18 @@ margin-top: 40px !important;
                 border-radius: 0px 3px 3px 0px;
                 border: 1px 0px 0px 0px;
                 opacity: 0px;
-                border: 1px solid gray;     
+                border: 1px solid gray;  
+                &:focus{
+                  border: 1px solid #33A0FF
+                }   
               }  
               textarea{
               resize: none;
               outline: none;
-              width: 610.15px;;
+              width: 610.15px;
+              &:focus{
+                border: 1px solid #33A0FF
+              }   
 
 
               }     
