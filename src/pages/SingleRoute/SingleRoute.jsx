@@ -2,7 +2,6 @@ import React,{useState,useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import ReactImageMagnify from 'react-image-magnify';
 import { CiHeart } from "react-icons/ci";
 import './SingleRouter.scss'
 import { GoHeart } from "react-icons/go";
@@ -29,7 +28,6 @@ import {useGetProductsQuery} from '../../Components/context/productApi';
 import PruductTop from '../../Components/PruductTop/index'
 const SingleRoute = () => {
     const {data:data1 } = useGetProductsQuery();
-    const[count1,setCount1] = useState(true);
     const[count,setCount] = useState(0)
     const onclick = () =>{
       setCount(count + 1)
