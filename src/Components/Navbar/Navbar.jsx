@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Navbar.scss';
 import rasm1 from '../../assets/img/logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useBeforeUnload } from 'react-router-dom';
 import { FiShoppingCart } from "react-icons/fi";
 import { FaRegUser, FaRegHeart } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
@@ -16,8 +16,13 @@ const Navbar = () => {
     const [menu, setMenu] = useState(false);
     let wishlist = useSelector(s => s.heart.value)
     const carts = useSelector(state => state.cart.value);
-    console.log(wishlist);
+     const [lange,setLange] =useState('uz')
+     console.log(lange);
     
+ 
+     useEffect(() =>{
+    i18n.changeLanguage(lange)
+     },[lange])
 
     return (
         <div>
@@ -25,7 +30,7 @@ const Navbar = () => {
                 <div className="container">
                     <div className="navbar_top">
                         <div className="navbar_top_link">
-                            <select name="language" id="language-select">
+                            <select value={lange} name="language" id="language-select" onChange={(e) => setLange(e.target.value)}>
                                 <option value="en">En</option>
                                 <option value="ru">Rus</option>
                                 <option value="uz">Uzb</option>
