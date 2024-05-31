@@ -645,9 +645,43 @@ p{
                }
             }
         }
+        .p1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+        }
+         
 }
-@media(max-width:400px){
-    .single_week_all{
+@media(max-width:410px){
+    .p1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+       .single_week{
+        h2{
+            display: none;
+        }
+       }
+       .hammasi{
+        margin-top: -150px;
+        padding: 20px 0;
+       }
+        .single_row_link{
+            display: flex;
+           justify-content: center;
+           align-items: center;
+            flex-wrap: wrap;
+            gap: 250px !important;
+            margin-top: 40px;
+            align-items: self-start;
+        }
+        .single_week_all{
+            padding: 0 10px;
+        }
+        .single_week_all{
         .p{
             padding: 20px 0;
            p{
