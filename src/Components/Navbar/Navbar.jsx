@@ -16,7 +16,7 @@ const Navbar = () => {
     const [menu, setMenu] = useState(false);
     let wishlist = useSelector(s => s.heart.value)
     const carts = useSelector(state => state.cart.value);
-     const [lange,setLange] =useState('uz')
+     const [lange,setLange] =useState( localStorage.getItem("i18nextLng")  || 'uz')
      console.log(lange);
     
  
