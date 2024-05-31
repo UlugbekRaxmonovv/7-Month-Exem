@@ -24,6 +24,7 @@ const Card = () => {
   const [lastname,setLastname] = useState('')
   const [phone,setPhone] = useState('')
   const [adress,setAdress] = useState('')
+  // document.body.style.overflow =  count ? "hidden" : "auto"
 
 
 
@@ -214,6 +215,7 @@ const Card = () => {
                   <label htmlFor="">First Name</label>
                   <div className="paymi_row">
                        <input type="text"  
+                       required
                         value={name}
                         onChange={(e) =>setName(e.target.value)}
                        placeholder='First Name' />
@@ -221,6 +223,7 @@ const Card = () => {
                     <label htmlFor="">Email Address</label>
                     <div className="paymi_row">
                        <input
+                       required
                         value={email}
                         onChange={(e) =>setEmail(e.target.value)}
                        type="text"  placeholder='Email Address' />
@@ -232,7 +235,7 @@ const Card = () => {
                     <VscBrowser/>
                        <p>Credit Card Or Debit</p>
                     </div>
-                       <input type="checkbox"  className='checkbox' defaultChecked/>
+                       <input  type="checkbox"  className='checkbox' defaultChecked/>
                     </div>
 
                     <div className="paymi_roww1">
@@ -257,12 +260,14 @@ const Card = () => {
                   <div className="paymi_row">
                        <input
                        value={lastname}
+                       required
                        onChange={(e) =>setLastname(e.target.value)}
                        type="text"  placeholder='Last Name' />
                     </div>
                     <label htmlFor="">Address for Delivery</label>
                     <div className="paymi_rows">
                      <textarea
+                     required
                      value={textarea}
                      onChange={(e) =>setTextarea(e.target.value)}
                      name="" id="" cols="30" rows="10">
@@ -272,6 +277,7 @@ const Card = () => {
                     <label htmlFor="">Mobile Phone</label>
                     <div className="paymi_row">
                        <input
+                       required
                        value={phone}
                        onChange={(e) =>setPhone(e.target.value)}
                        type="text"  placeholder='Mobile Phone' />
