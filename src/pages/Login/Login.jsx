@@ -3,27 +3,30 @@ import './Login.scss'
 import { Link } from 'react-router-dom';
 import PruductTop from '../../Components/PruductTop'
 import Footer from '../../Components/Footer/Footer';
-import axios from 'axios';
+import {usePostSignInMutation} from  '../../Components/context/productApi'
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 const Login = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [data,setData] =useState('');
-  console.log(data);
-  
-
+  const [username, setUsername] = useState('mor_2314');
+  const [password, setPassword] = useState('83r5^_');
+  let [signUp, {data, isLoading, isSuccess, isError}] = usePostSignInMutation()
+  const Navigate = useNavigate()
+  if(isSuccess){
+    localStorage.setItem("token", data.token)
+    console.log(data);
+    Navigate("/admin")
+    toast.success('Marhamat')
+  }
+  if(isError){
+    toast.error('Xato kiritingiz')
+  }
   const handelSubmit = (e) => {
     e.preventDefault();
-   let usr = {
-     username:username,
-     password: password
+    signUp({
+      username, 
+      password
+    }) 
    }
-  //  axios
-  //  .post('https://fakestoreapi.com/auth/login',usr)
-  //  .then((res) => {
-  //     // console.log(res.data);
-  //     setData(res.data);
-  //   })
-  }
     return (
         <div>
   <PruductTop/>
@@ -59,7 +62,14 @@ const Login = () => {
               </div>
 
               <div className="login_row1">
-                <button>LOGIN</button>
+                <button>
+                  {
+                    isLoading ? "Loading..." 
+                      : 
+                    "Login"
+              
+                  }
+                </button>
               </div>
               
             </div>

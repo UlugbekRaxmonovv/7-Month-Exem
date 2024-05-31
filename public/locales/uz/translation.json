@@ -1,0 +1,10 @@
+{
+    "items": "element",
+    "navbar":{
+        "home": "ASOSIY SAHIFA",
+        "bags": "SUMTALAR",
+        "sneakers": "KROSOQLAR",
+        "belt": "KAMAR",
+        "contact": "ALOQA"
+    }
+}

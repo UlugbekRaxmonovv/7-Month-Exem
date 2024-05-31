@@ -46,10 +46,6 @@
                     max-width: 200.29px;
                     width: 100%;
                     height: 54px;
-                    top: 3853.36px;
-                    left: 291.23px;
-                    gap: 0px;
-                    opacity: 0px;
                     font-family: Proxima Nova;
                     font-size: 20px;
                     font-weight: 400;
@@ -122,7 +118,7 @@
     }
     .btn{
         width: 127px;
-        height: 63px;
+        height: 63px !important;
         background: #40BFFF;
         font-family: Poppins;
         font-size: 20px;
@@ -312,18 +308,11 @@
 }
 
 @media(max-width:400px){
-    .altt{
+    .alt1{
         h1{
-            text-align: center;
-            font-family: Poppins;
-            font-size: 30px;
-            font-weight: 600;
-            line-height: 52.5px;
-            color: #22262A;
-            padding: 50px 0;
-            margin-top: 50px;
-            padding: 0 10px;
-    
+            font-size: 30px !important;
+         padding: 250px 0;
+         margin-top: -200px !important;
         }
     }
     .bannir_input{
@@ -338,7 +327,7 @@
         padding: 20px 0;
         display: flex;
         justify-content: space-between;
-        margin-top: 20px;
+        margin-top: 150px;
        .altt{
         button{
             width:   120px;
@@ -358,5 +347,54 @@
        }
     
             
+    }
+
+    .mySwiper{
+        display: flex;
+        margin-top: -200px!important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-left: 40px;
+      
+        .all{
+            display: flex;
+            align-items: center !important;
+            justify-content: center !important;
+            flex-wrap: wrap;
+           height: 1500px;
+            // height: 300px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            padding: 20px 0;
+           
+            .featur_all{
+                display: flex;
+                align-items: self-start;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+                .start{
+                    display: flex;
+                   align-items: center;
+                   gap: 10px;
+                   margin-top: 20px;
+                    .star_all{
+                        svg{
+                            color: yellow;
+                        }
+                    }
+                }
+                .img{
+                    img{
+                        max-width: 154px;
+                        width: 100%;
+                        height: 100px;
+                    }
+                    
+           
+                }
+            }
+        }
+    
     }
 }

@@ -6,7 +6,7 @@ import Footer from '../../Components/Footer/Footer';
 import Banner from '../../Components/Banner/Banner';
 import Featured from '../../Components/Featured/Featured';
 const Home = () => {
-    const { data,isLoading } = useGetProductsQuery();
+    const { data,isLoading } = useGetProductsQuery('limit?=5');
     return (
         <div>
           <Main/>

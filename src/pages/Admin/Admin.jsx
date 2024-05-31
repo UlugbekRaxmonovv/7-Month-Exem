@@ -7,7 +7,7 @@ import Footer from '../../Components/Footer/Footer';
 const Admin = () => {
     return (
         <div>
-            <ProductTop/>
+            {/* <ProductTop/> */}
             <div className="single">
             <div className="container">
               <div className="single_row">

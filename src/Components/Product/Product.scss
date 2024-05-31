@@ -15,6 +15,10 @@ color: #22262A;
     align-items: self-start;
     padding: 70px 0;
     .category_all{
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         button{
             border: none;
             font-family: Poppins;
@@ -224,16 +228,16 @@ padding: 20px 0;
 cursor: pointer;
 }
 
-@media(max-width:500px){
-    .category{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: self-start;
-        gap: 20px;
-        padding: 70px 10px;
-}
-}
+// @media(max-width:500px){
+//     .category{
+//         display: flex;
+//         justify-content: center;
+//         flex-wrap: wrap;
+//         align-items: self-start;
+//         gap: 20px;
+//         padding: 70px 10px;
+// }
+// }
 
 
 

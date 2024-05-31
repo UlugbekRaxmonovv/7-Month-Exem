@@ -8,8 +8,11 @@ import { IoSearch } from "react-icons/io5";
 import { TbMenuDeep } from "react-icons/tb";
 import { MdBorderColor } from "react-icons/md";
 import { useSelector } from 'react-redux';
+import {useTranslation} from "react-i18next"
+import '../../i18n.js';
 
 const Navbar = () => {
+   let {t,i18n} = useTranslation()
     const [menu, setMenu] = useState(false);
     let wishlist = useSelector(s => s.heart.value)
     const carts = useSelector(state => state.cart.value);
@@ -48,7 +51,7 @@ const Navbar = () => {
                                 <div className="icon_all">
                                 <MdBorderColor />
                                 </div>
-                                <p>Items</p>
+                                <p>{t("items")}</p>
                             </div>
                             <div className="link">
                                 <span className='span'>$0.00</span>
@@ -66,11 +69,11 @@ const Navbar = () => {
                             <Link to="/"><img src={rasm1} alt="Logo" /></Link>
                         </div>
                         <ul className={`Ul_li ${menu ? "show" : ""}`}>
-                            <li><Link to="/">HOME</Link></li>
-                            <li><Link to="/">BAGS</Link></li>
-                            <li><Link to="/">SNEAKERS</Link></li>
-                            <li><Link to="/">BELT</Link></li>
-                            <li><Link to="/contact">CONTACT</Link></li>
+                            <li><Link to="/">{t("navbar.home")}</Link></li>
+                            <li><Link to="/">{t("navbar.bags")}</Link></li>
+                            <li><Link to="/">{t("navbar.sneakers")}</Link></li>
+                            <li><Link to="/">{t("navbar.belt")}</Link></li>
+                            <li><Link to="/contact">{t("navbar.contact")}</Link></li>
                         </ul>
                         <TbMenuDeep onClick={() => setMenu(!menu)} className='menu' />
                     </nav>

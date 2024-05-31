@@ -5,7 +5,7 @@ export const productApi = api.injectEndpoints({
     // Get request
     getProducts: build.query({
       query: (params) => ({ 
-        url: '/products?limit=8', 
+        url: '/products', 
         params 
       }),
       providesTags:["Product"]
@@ -43,7 +43,15 @@ export const productApi = api.injectEndpoints({
         method: "DELETE"
       }),
       invalidatesTags: ["Product"]
-    })
+    }),
+     postSignIn: build.mutation({
+      query: (body)=>({
+          url: "/auth/login",
+          method:"POST",
+          body
+      }),
+      invalidatesTags: ["User"]
+  })
   }),
 })
 
@@ -53,4 +61,5 @@ export const {
   useCreateProductMutation,
   useUpdateProductMutation,
   useGetDetialProductQuery,
+  usePostSignInMutation
 } = productApi

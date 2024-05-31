@@ -1,0 +1,10 @@
+{
+    "items": "item",
+    "navbar":{
+        "home": "Home",
+        "bags": "Bags",
+        "sneakers": "Sneakers",
+        "belt": "Belt",
+        "contact": "Contact"
+    }
+}

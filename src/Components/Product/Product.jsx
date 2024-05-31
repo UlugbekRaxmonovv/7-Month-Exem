@@ -66,7 +66,10 @@ const handleCategoryChange = (category) => {
 
 
 const categoryButtons = categories.map((el, idx) => (
-  <button onClick={() => handleCategoryChange(el)} key={idx}>{el}</button>
+  <div className="alltrw" key={idx}>
+
+    <button onClick={() => handleCategoryChange(el)} >{el}</button>
+  </div>
 ));
 
     let links = dataSet?.map((link) =>(
